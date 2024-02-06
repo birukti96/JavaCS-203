@@ -79,7 +79,7 @@ public static void main(String[] args) {
 			 break;
 			
 		 default: 
-			 colors = "Unknoun color";
+			 colors = "Unknown color";
 			 break;
 			 
 			  }
@@ -104,5 +104,5 @@ public static void main(String[] args) {
 	}
 
 
-
 }
+

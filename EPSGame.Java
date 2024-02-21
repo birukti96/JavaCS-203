@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class ESPGame {
 public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 		
 	 final String COLOR_RED = "Red";  
 	 final String COLOR_BLUE="Blue";

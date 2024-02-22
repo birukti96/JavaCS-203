@@ -1,0 +1,58 @@
+public class Patient {
+	
+String firstName;
+String middleName;
+String lastName;
+String streetAddress;
+String City;
+String State;
+String zipCode;
+String phoneNumber;
+String emergencycontactName;
+String emergencycontactPhonenumber;
+	
+public Patient() {
+	
+}
+
+public Patient ( String firstName, String middleName, String lastName) {
+	this.firstName=firstName;
+	this.middleName=middleName;
+	this.lastName=lastName;
+}
+public Patient(String firstName, String middleName, String lastName, String streetAddress, String City,
+		String State, String zipCode, String phoneNumber, String emergencycontactName, 
+		String emergencycontactPhonenumber	) {
+	this.firstName=firstName;
+	this.middleName=middleName;
+	this.lastName=lastName;
+	this.streetAddress=streetAddress;
+	this.City=City;
+	this.State=State;
+	this.zipCode=zipCode;
+	this.phoneNumber=phoneNumber;
+	this.emergencycontactName=emergencycontactName;
+	this.emergencycontactPhonenumber=emergencycontactPhonenumber;
+	
+}
+public String buildFullName() {
+	return firstName+" "+middleName+" "+lastName;
+	
+}
+public String buildAddress () {
+	return streetAddress+" "+City+" "+State+" "+zipCode;
+}
+public String buildEmergencyContact () {
+	return emergencycontactName+" "+emergencycontactPhonenumber;
+}
+public String toString () {
+	return "Patient Information:\n "+
+			"\tFull Name: "+ buildFullName()+"\n"+
+			"\tAddress: "+ buildAddress()+"\n"+
+			"\tPhone Number: "+ phoneNumber + "\n"+
+			"\tEmergency Contact:"+ buildEmergencyContact();
+			
+		
+}
+
+}
